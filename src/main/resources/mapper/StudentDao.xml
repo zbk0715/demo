@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.StudentDao">
+    <resultMap id="baseMap" type="Student">
+        <result property="firstname" column="firstname"/>
+        <result property="age" column="age"/>
+    </resultMap>
+    <select id="getAllStudent" resultMap="baseMap">
+
+    select *
+    from student
+
+    </select>
+</mapper>
