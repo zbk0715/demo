@@ -14,11 +14,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class DemoApplicationTests {
 
-@Autowired
-private PersonRepository personRepository;
+    @Autowired
+    private PersonRepository personRepository;
+
     @Test
-   public void save() {
-        Person p=new Person("1","Donald","Trump");
+    public void save() {
+        Person p = new Person("1", "Donald", "Trump");
         personRepository.save(p);
     }
 
